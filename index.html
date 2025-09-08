@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Tac Toe</title>
+    <link rel="icon" href="icon/ring.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="fonts.css">
+
+</head>
+
+<body onload="start()">
+
+<!----------------------  Start Screen  ------------------------------>
+    <div class="main-container" id ="start-screen">
+        
+        <div class="player-titles">
+            <span>YOU</span>
+            <span>CPU</span>
+        </div>
+        <div class="player-box-container">
+            <div class="player-box box1">
+                <img src="icon/line.png" id="box1">
+            </div>
+            <div class="player-box box2">
+                <img src="icon/line.png" id="box2">
+            </div>
+        </div>
+        <div class="player-titles">
+            <span id="playername">?</span>
+            <span id="cpu">?</span>
+        </div>
+        <div class="title">
+           <button onclick="choosePlayer()" id="choose">Choose Your Character</button>
+        </div>
+        <div class="icon-links">
+            <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
+            <a href="https://pixabay.com/users/submority-30821389/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=124760">Sound Effect by SUBMORITY from Pixabay</a>
+            <a href="https://pexels.com">Images from Pexels</a>
+        </div>
+    </div>
+   
+<!--------------------------------------- End Screens ------->
+
+    <div class="end-screen" id="end-cpu-won">
+        <div class="end-screen-content">
+            You cannot seize the power of the ring
+            <a href="index.html">Try Again</a>
+
+        </div>
+    </div>
+    <div class="end-screen-tied" id="end-tied">
+        <div class="end-screen-content">
+            Tied - You were lucky this time
+            <a href="index.html">Try Again</a>
+        </div>
+    </div>
+
+    <div class="end-screen-pwon" id="end-player-won">
+        <div class="end-screen-content">
+            Oh no! How did you do that?
+            <a href="index.html">Play again</a>
+        </div>
+    </div>
+
+
+<!----------------------  Play Screen  ------------------------------------>
+    <div class="title-table-container" style="transform: translateX(100%)" id="title-table">
+        <div class="players-titles-field" id="play-titles">
+            <div class="player-names-box" id="player-name-box">
+                <div>Player 1:</div>
+                <div class="image-and-name">
+                    <img id="player-image-field" src="icon/1.png" alt="">
+                    <div id="player-name-field">Gollum</div>
+                </div>
+            </div>
+            <div class="player-names-box less-visible" id="cpu-name-box">
+                <div>CPU:</div>
+                <div class="image-and-name">
+                    <img src="icon/ring.png">
+                    <div>The Ring</div>
+                </div>
+            </div>
+        </div>
+        <div class="table-container" id="table-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td onclick="fillShape(0)" id="square-0">
+                            <img id="player-0" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-0" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                        <td onclick="fillShape(1)" id="square-1">
+                            <img id="player-1" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-1" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                        <td onclick="fillShape(2)" id="square-2">
+                            <img id="player-2" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-2" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td onclick="fillShape(3)" id="square-3">
+                            <img id="player-3" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-3" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                        <td onclick="fillShape(4)" id="square-4">
+                            <img id="player-4" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-4" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                        <td onclick="fillShape(5)" id="square-5">
+                            <img id="player-5" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-5" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td onclick="fillShape(6)" id="square-6">
+                            <img id="player-6" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-6" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                        <td onclick="fillShape(7)" id="square-7">
+                            <img id="player-7" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-7" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                        <td onclick="fillShape(8)" id="square-8">
+                            <img id="player-8" class="shape d-none" src="./icon/1.png" alt="">
+                            <img id="cpu-8" class="shape d-none" src="./icon/ring.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
