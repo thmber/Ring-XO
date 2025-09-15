@@ -8,6 +8,7 @@
 - it's impossible to win!
 - almost!
 
+<span style="color:blue">This text will appear blue (if supported)</span>
 
 ## :toolbox: Built With
 
