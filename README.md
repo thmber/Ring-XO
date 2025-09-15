@@ -18,6 +18,6 @@
 
 ## :notes: Live Demo
 
-Check out the live join: [thmahler.net/ringxo](thmahler.net/ringxo)
+Check out the live join: [thmahler.net/ringxo](thmahler.net/games/ringxo)
 
 ---
