@@ -19,6 +19,6 @@
 ## :notes: Live Demo
 
 Check out the live game: 
-[ringxo](https://thmahler.net/games/ringxo)
+[ringxo :ring:](https://thmahler.net/games/ringxo)
 
 ---
