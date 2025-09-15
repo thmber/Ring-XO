@@ -1,4 +1,4 @@
-## :pushpin: RingXO
+# :pushpin: RingXO
 
 ![RingXo Screenshot](img/tic.avif)
 
