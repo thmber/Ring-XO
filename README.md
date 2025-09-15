@@ -1,4 +1,4 @@
-# :ring: RingXO
+## :pushpin: RingXO
 
 ![RingXo Screenshot](img/tic.avif)
 
@@ -7,8 +7,6 @@
 - Version of the old game
 - it's impossible to win!
 - almost!
-
-<span style="color:blue">This text will appear blue (if supported)</span>
 
 ## :toolbox: Built With
 
@@ -20,6 +18,6 @@
 ## :notes: Live Demo
 
 Check out the live game: 
-[ringxo :ring:](https://thmahler.net/games/ringxo)
+[ringxo](https://thmahler.net/games/ringxo)
 
 ---
