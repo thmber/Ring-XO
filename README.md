@@ -4,7 +4,7 @@
 
 ## :sunflower: Features
 
-- Version of the old game
+- Version of the popular game
 - it's impossible to win!
 - almost!
 
