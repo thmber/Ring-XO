@@ -11,6 +11,7 @@ let danger = false;
 let cpuWon = false;
 let playerWon = false;
 let winningFields = [];
+let soundOn = false;
 
 let dangerPosition1 = [0, 3, 0, 1, 4, 1, 2, 5, 2, 0, 1, 0, 3, 4, 3, 6, 7, 6, 0, 4, 0, 2, 4, 2];
 let dangerPosition2 = [3, 6, 6, 4, 7, 7, 5, 8, 8, 1, 2, 2, 4, 5, 5, 7, 8, 8, 4, 8, 8, 4, 6, 6];
@@ -35,6 +36,19 @@ function fillShape(id){
     }
 }
 
+
+function turnSoundOn(){
+    if (soundOn) {
+        soundOn = false;
+        document.getElementById("sound-button").src = "/img/buttons/sound-off.png"
+        
+    }
+    else{
+        soundOn = true;
+        document.getElementById("sound-button").src = "/img/buttons/sound.png"
+
+    }
+}
 
 function removeOptions(id){
     let fieldCovered = fieldsFree.indexOf(id);
@@ -207,7 +221,7 @@ function fillCpu(id){
         document.getElementById('player-name-box').style.opacity = "1";
         document.getElementById('cpu-name-box').style.opacity = "0.2";
         draw();
-        if (cpuWon == true && playerWon == false) {
+        if (cpuWon == true && playerWon == false && soundOn == true) {
             sound.play();
         }
     }, 250);

@@ -99,7 +99,16 @@ body{
     text-decoration: none;
     color: white;
 }
-
+.sound-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    cursor: pointer;
+}
+.sound-control img{
+    width: 35px;
+}
 /*################################ play screen #########################*/
 
 .players-titles-field{
